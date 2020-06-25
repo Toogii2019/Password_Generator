@@ -44,7 +44,7 @@ function passGen () {
         return passWord;
     }
     var passwordField = document.getElementById("password-generated");
-    passWordGenerated = pwdObj.generatePassword();
+    var passWordGenerated = pwdObj.generatePassword();
     if (passWordGenerated) {
         passwordField.innerText = pwdObj.generatePassword();
     }
