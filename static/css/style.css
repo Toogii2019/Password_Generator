@@ -2,7 +2,7 @@
 :root {
     --primary: #ddd;
     --dark: #333;
-    --light: #fff;
+    --light: rgb(243, 234, 234);
     --light-blue: rgb(169, 222, 222);
     --black: rgb(74, 82, 82);
     --shadow: 0 1px 5px rgba(104,104,104, 0.8);
@@ -18,7 +18,8 @@ html {
 body {
     margin: 30px 50px;
     line-height: 1.4;
-    background: rgb(209, 232, 232);
+    /* background: rgb(209, 232, 232); */
+    background: linear-gradient(to left, rgb(201, 240, 240), rgba(248, 248, 248, 0.7));
 
 }
 .wrapper {
@@ -39,6 +40,8 @@ body {
 .wrapper {
     display: grid;
     grid-gap: 20px;
+    height: 100vh;
+    /* width: 100vw; */
 }
 nav {
     display: grid;
@@ -52,7 +55,7 @@ nav ul {
 }
 
 nav a {
-    /* background: white; */
+    background: var(--light);
     display: block;
     text-decoration: none;
     padding: 0.8rem;
@@ -71,7 +74,7 @@ nav a:hover {
 .password-section {
     display: grid;
     grid-gap: 20px;
-    /* background: white; */
+    /* background: var(--light); */
     grid-template-areas: 
         'box-1 box-2'
         'box-1 box-3';
@@ -84,6 +87,7 @@ nav a:hover {
     opacity: 0.9;
     background-size: cover;
     background-position: center;
+    background: var(--light);
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -94,7 +98,7 @@ nav a:hover {
 }
 .box-2 {
     grid-area: box-2;
-
+    background: var(--light);
     opacity: 0.9;
     padding: 3rem;
     display: flex;
@@ -106,6 +110,7 @@ nav a:hover {
 }
 .box-3 {
     grid-area: box-3;
+    background: var(--light);
     min-height: 50px;
     /* background: url(../image/bg.png); */
     opacity: 0.9;
@@ -139,7 +144,7 @@ footer {
 }
 
 .title {
-    /* background: white; */
+    background: var(--light);
     box-shadow: var(--shadow);
     padding: 10px;
     text-align: center;
@@ -154,7 +159,8 @@ hr {
     margin: 30px;
     width: auto;
     height: auto;
-    background: var(--light);
+    background: var(--dark);
+    color: white;
     overflow-wrap: break-word;
     text-align: center;
     max-width: 50vw;
