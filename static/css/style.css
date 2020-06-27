@@ -16,9 +16,10 @@ html {
     color: var(--dark);
 }
 body {
-    background: #ccc;
     margin: 30px 50px;
     line-height: 1.4;
+    background: rgb(209, 232, 232);
+
 }
 .wrapper {
     display: grid;
@@ -48,11 +49,10 @@ nav ul {
     padding: 0;
     list-style: none;
     grid-template-columns: repeat(3, 1fr);
-
 }
 
 nav a {
-    background: var(--primary);
+    /* background: white; */
     display: block;
     text-decoration: none;
     padding: 0.8rem;
@@ -71,6 +71,7 @@ nav a:hover {
 .password-section {
     display: grid;
     grid-gap: 20px;
+    /* background: white; */
     grid-template-areas: 
         'box-1 box-2'
         'box-1 box-3';
@@ -138,6 +139,7 @@ footer {
 }
 
 .title {
+    /* background: white; */
     box-shadow: var(--shadow);
     padding: 10px;
     text-align: center;

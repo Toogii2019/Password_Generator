@@ -51,18 +51,14 @@ function passGen () {
 
 }
 
-function copyPassword () {
-    /* Get the text field */
-    var copyText = document.getElementById("password-generated").value;
-    
-    /* Select the text field */
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-    
-    /* Copy the text inside the text field */
+function copyPassword() {
+    var range = document.createRange();
+    range.selectNode(document.getElementById("password-generated"));
+    window.getSelection().removeAllRanges(); // clear current selection
+    window.getSelection().addRange(range); // to select text
     document.execCommand("copy");
-    
-    /* Alert the copied text */
-    alert("Copied the text: " + copyText);
-      
+    window.getSelection().removeAllRanges();// to deselect
+
+    var copiedAlert = document.getElementById("copyAlert");
+    copiedAlert.setAttribute("class", "alert alert-success alert-dismissible show");
 }
