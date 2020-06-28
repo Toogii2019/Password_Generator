@@ -35,11 +35,12 @@
 
         <section class="password-section">
             <div class="box-1">
-                <h4>Customize your password</h4>
+                <h4 style="text-align: center;">Customize your password</h4>
                 <hr style="border: 2px solid;">
                 <h5>Password Length</h5>
-                <input type="text" class="input-area" id="password-length" value="8">
-                <button class="btn btn-outline-success" type="button" onclick="passGen();">Generate Password</button>
+                <!-- <input id="number-of-people" type="number" placeholder="split-between"> -->
+                <input type="number" class="input-area" id="password-length" value="8">
+                <button id="submit" type="button" onclick="passGen();">Generate Password</button>
                 <div id="password-generated"></div><button id="btn copy" type="button" onclick="copyPassword();">Copy</button>
             
                 <div class="alert alert-success alert-dismissible fade" role="alert" id="copyAlert" style="margin: 20px;">
@@ -48,10 +49,14 @@
             </div>
             <div class="box box-2">
                 <div class="checkboxes">
-                    <span><input type="checkbox" id="uppercase-checkbox-1">  Include uppercase letter</span>
-                    <span><input type="checkbox" id="lowercase-checkbox-2">  Include lowecase letter</span>
-                    <span><input type="checkbox" id="numbers-checkbox-3">  Include numbers</span>
-                    <span><input type="checkbox" id="specialchar-checkbox-4">  Include Special Characters</span>
+                    <input type="checkbox" id="uppercase-checkbox-1" name="uppercase-checkbox-1">
+                    <label for="uppercase-checkbox-1">Uppercase Letter</label>
+                    <input type="checkbox" id="lowercase-checkbox-2" name="lowercase-checkbox-2">  
+                    <label for="lowercase-checkbox-2">Lowecase letter</label>
+                    <input type="checkbox" id="numbers-checkbox-3" name="numbers-checkbox-3">  
+                    <label for="numbers-checkbox-3">Numbers</label>
+                    <input type="checkbox" id="specialchar-checkbox-4" name="specialchar-checkbox-4">  
+                    <label for="specialchar-checkbox-4">Symbols</label>
                 </div>
                 <div class="image">
                     <img src="static/images/key.png">

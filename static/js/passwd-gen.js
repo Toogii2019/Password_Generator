@@ -70,13 +70,19 @@ function passGen () {
 // Copy password
 
 function copyPassword() {
-    var range = document.createRange();
-    range.selectNode(document.getElementById("password-generated"));
-    window.getSelection().removeAllRanges(); // clear current selection
-    window.getSelection().addRange(range); // to select text
-    document.execCommand("copy");
-    window.getSelection().removeAllRanges();// to deselect
-    displayAlert();
+    if (document.getElementById("password-generated").innerHTML) {
+        var range = document.createRange();
+        range.selectNode(document.getElementById("password-generated"));
+        window.getSelection().removeAllRanges(); // clear current selection
+        window.getSelection().addRange(range); // to select text
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges();// to deselect
+        displayAlert();
+    }
+    else {
+        alert("No password to copy!");
+        return;
+    }
 }
 
 
