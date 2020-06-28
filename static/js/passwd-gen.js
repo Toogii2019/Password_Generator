@@ -18,6 +18,10 @@ function passGen () {
     pwdObj.passPoolArray = [];
     pwdObj.generatePassword = function() {
         var passLen = document.getElementById("password-length").value;
+        if (passLen < 8) {
+            alert("Password length must be 8 or longer!");
+            return;
+        }
         var passWord = "";
         if (this.upperCase == true) {
             // upperCasePwdPool = lowerCaseLettersPool.toUpperCase();
@@ -39,6 +43,7 @@ function passGen () {
         }
         else if (this.upperCase == false && this.lowerCase == false && this.numbers == false) {
             alert("Please check at least one of the checkboxes");
+            
             return;
         }
         var i = 0;
