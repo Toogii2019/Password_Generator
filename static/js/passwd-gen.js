@@ -1,8 +1,16 @@
+// Function to generate a password
+
 function passGen () {
+
+    // Defining pools to be used
+
     var numberPool = "0123456789";
     var lowerCaseLettersPool = "abcdefghijklmnopqrstuvwxyz";
     var specialCharPool = " !#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
     var pwdObj = new Object();
+
+    // Creating password object
+
     pwdObj.upperCase = document.getElementById("uppercase-checkbox-1").checked;
     pwdObj.lowerCase = document.getElementById("lowercase-checkbox-2").checked;
     pwdObj.numbers = document.getElementById("numbers-checkbox-3").checked;
@@ -43,6 +51,9 @@ function passGen () {
         }
         return passWord;
     }
+
+    // Generate password and display
+
     var passwordField = document.getElementById("password-generated");
     var passWordGenerated = pwdObj.generatePassword();
     if (passWordGenerated) {
@@ -51,6 +62,8 @@ function passGen () {
 
 }
 
+// Copy password and display "copied" alert when copy button is clicked
+
 function copyPassword() {
     var range = document.createRange();
     range.selectNode(document.getElementById("password-generated"));
@@ -58,7 +71,17 @@ function copyPassword() {
     window.getSelection().addRange(range); // to select text
     document.execCommand("copy");
     window.getSelection().removeAllRanges();// to deselect
-
     var copiedAlert = document.getElementById("copyAlert");
-    copiedAlert.setAttribute("class", "alert alert-success alert-dismissible show");
+    copiedAlert.setAttribute("class", "alert alert-success alert-dismissible show fade");
+    hideAlert(copiedAlert);
+}
+
+// Hide "copied" alert after 3 seconds
+
+function hideAlert(copiedAlert) {
+    var alertInterval = setTimeout(function() {
+        copiedAlert.setAttribute("class", "alert alert-success alert-dismissible fade")
+        clearInterval(alertInterval);
+        
+    }, 3000);
 }
