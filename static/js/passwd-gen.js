@@ -62,7 +62,7 @@ function passGen () {
 
 }
 
-// Copy password and display "copied" alert when copy button is clicked
+// Copy password
 
 function copyPassword() {
     var range = document.createRange();
@@ -71,6 +71,13 @@ function copyPassword() {
     window.getSelection().addRange(range); // to select text
     document.execCommand("copy");
     window.getSelection().removeAllRanges();// to deselect
+    displayAlert();
+}
+
+
+// Display "copied" alert when copy button is clicked
+
+function displayAlert() {
     var copiedAlert = document.getElementById("copyAlert");
     copiedAlert.setAttribute("class", "alert alert-success alert-dismissible show fade");
     hideAlert(copiedAlert);
