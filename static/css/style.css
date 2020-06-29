@@ -184,7 +184,7 @@ hr {
     color: white;
     overflow-wrap: break-word;
     text-align: center;
-    max-width: 50vw;
+    max-width: 300px;
 }
 
 #password-length {
