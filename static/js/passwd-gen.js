@@ -101,5 +101,5 @@ function hideAlert(copiedAlert) {
         copiedAlert.setAttribute("class", "alert alert-success alert-dismissible fade")
         clearInterval(alertInterval);
         
-    }, 3000);
+    }, 1500);
 }

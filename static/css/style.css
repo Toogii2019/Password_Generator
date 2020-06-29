@@ -36,7 +36,11 @@ body {
     padding: 0.6rem 1.3rem;
     text-decoration: none;
     border: 0;
+    margin: auto;
     margin-top: 30px;
+
+
+
     
 }
 
@@ -83,7 +87,7 @@ nav a:hover {
     grid-area: box-1;
     /* min-height: 500px; */
     opacity: 0.9;
-    background: var(--light);
+    background: white;
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -94,7 +98,7 @@ nav a:hover {
 }
 .box-2 {
     grid-area: box-2;
-    background: var(--light);
+    background: white;
     opacity: 0.9;
     padding: 3rem;
     display: flex;
@@ -106,7 +110,7 @@ nav a:hover {
 }
 .box-3 {
     grid-area: box-3;
-    background: var(--light);
+    background: white;
     min-height: 50px;
     opacity: 0.9;
     padding: 5px;
@@ -165,7 +169,7 @@ footer {
 }
 
 .title {
-    background: var(--light);
+    background: white;
     box-shadow: var(--shadow);
     padding: 10px;
     text-align: center;
@@ -208,20 +212,6 @@ input {
     outline: none;
   }
   
-  button {
-    background-color: #D6EEFF;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 20px 40px 20px 0;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  .lucky-btn {
-    background-color: #A491D3;
-    color: white;
-  }
-
 
 @media(max-width: 780px) {
     .password-section {
