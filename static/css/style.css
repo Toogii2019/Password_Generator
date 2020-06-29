@@ -12,20 +12,20 @@
 
 html {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
     color: var(--dark);
 }
 body {
     margin: 0;
     padding: 20px;
     line-height: 1.4;
+    font-family: sans-serif;
     background: linear-gradient(to left, rgb(201, 240, 240), rgba(248, 248, 248, 0.7));
-    background-size: cover;
+
 
 }
 .wrapper {
     display: grid;
-    gap: 20px;
+    gap: 10px;
     height: 100vh;
 
 } 
@@ -51,11 +51,11 @@ nav {
 }
 nav ul {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 10px;
     padding: 0;
     list-style: none;
     grid-template-columns: repeat(3, 1fr);
-    box-shadow: var(--shadow);
+    /* box-shadow: var(--shadow); */
     margin-bottom: 0;
 
 }
@@ -85,7 +85,6 @@ nav a:hover {
 
 .box-1 {
     grid-area: box-1;
-    /* min-height: 500px; */
     opacity: 0.9;
     background: white;
     padding: 3rem;
@@ -93,7 +92,7 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: var(--shadow);
+    background-image: url(../images/bg3.jpg);
 
 }
 .box-2 {
@@ -105,18 +104,18 @@ nav a:hover {
     flex-direction: row;
     align-items: left;
     justify-content: space-evenly;
-    box-shadow: var(--shadow); 
+    background-image: url(../images/bg5.jpg);
+    color: black;
 
 }
 .box-3 {
     grid-area: box-3;
     background: white;
     min-height: 50px;
-    opacity: 0.9;
+    opacity: 0.7;
     padding: 5px;
     justify-content: center;
     align-items: center;
-    box-shadow: var(--shadow);
     display: grid;
     gap: 2px;
     grid-template-columns: auto auto auto;
@@ -142,7 +141,7 @@ img {
 }
 
 .box-3 div {
-    box-shadow: var(--shadow);
+    /* box-shadow: var(--shadow); */
     width: 200px;
     height: 200px;
     text-align: center;
@@ -169,13 +168,21 @@ footer {
 }
 
 .title {
-    background: white;
-    box-shadow: var(--shadow);
+    /* background: white; */
+    opacity: 0.9;
     padding: 10px;
     text-align: center;
+    /* background-image: url(../images/bg10.jpg);
+    background-size: cover;
+    color: white; */
+
 
 }
-
+header {
+    background-image: url(../images/bg10.jpg);
+    background-size: cover;
+    color: white;
+}
 hr {
     width: 100%;
 }
@@ -193,6 +200,7 @@ hr {
 
 #password-length {
     text-align: center;
+    color: black;
 }
 
 
@@ -210,6 +218,12 @@ input {
 
   input:focus {
     outline: none;
+  }
+
+  .ads-containers {
+      height: auto;
+      width: auto;
+      border: 1px dotted;
   }
   
 
