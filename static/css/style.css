@@ -55,7 +55,6 @@ nav ul {
     padding: 0;
     list-style: none;
     grid-template-columns: repeat(3, 1fr);
-    /* box-shadow: var(--shadow); */
     margin-bottom: 0;
 
 }
@@ -181,7 +180,7 @@ footer {
 header {
     background-image: url(../images/bg10.jpg);
     background-size: cover;
-    color: white;
+    color: black;
 }
 hr {
     width: 100%;
