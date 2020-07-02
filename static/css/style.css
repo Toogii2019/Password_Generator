@@ -96,15 +96,14 @@ nav a:hover {
 }
 .box-2 {
     grid-area: box-2;
-    background: white;
     opacity: 0.9;
     padding: 3rem;
     display: flex;
     flex-direction: row;
     align-items: left;
     justify-content: space-evenly;
-    background-image: url(../images/bg5.jpg);
-    color: black;
+    background-image: url(../images/bg6.jpg);
+    color: white;
 
 }
 .box-3 {
