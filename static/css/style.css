@@ -228,8 +228,8 @@ input {
 @media(max-width: 780px) {
     .password-section {
         grid-template-areas:
-            'box-1'
             'box-2'
+            'box-1'
             'box-3';
     }
     .box-3 {
