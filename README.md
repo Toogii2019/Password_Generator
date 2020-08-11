@@ -23,11 +23,11 @@ The following is submitted for review:
 
 * The URL of the deployed application.
 
-https://toogii2019.github.io/Password_generator/
+https://toogii2019.github.io/Password_Generator/
 
 * The URL of the GitHub repository which includes a README describing the project.
 
-https://github.com/Toogii2019/Password_generator
+https://github.com/Toogii2019/Password_Generator
 
 HTML Checker
 
