@@ -9,13 +9,13 @@ This app uses pure Javascript Front End solution and generates random passwords.
 
 ### How to start development:
 
-Create project1_development branch locally and clone the repo
+Create password_generator_development branch locally and clone the repo
 
-git clone -b password_generator_development git@github.com:Toogii2019/Password_generator.git
+git clone -b password_generator_development git@github.com:Toogii2019/Password_Generator.git
 
 git push
 
-Go to https://github.com/Toogii2019/Password_generator/pulls and create New Pull Request for your changes.
+Go to https://github.com/Toogii2019/Password_Generator/pulls and create New Pull Request for your changes.
 
 #### Review
 
